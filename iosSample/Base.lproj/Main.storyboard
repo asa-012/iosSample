@@ -77,9 +77,26 @@
                     <view key="view" contentMode="scaleToFill" id="GNW-qF-t9z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3l-4Y-OSe">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="dSK-iJ-Zo5"/>
+                                    <constraint firstAttribute="width" constant="100" id="hBE-9O-dLG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back">
+                                    <color key="baseBackgroundColor" systemColor="systemBlueColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lhy-Vi-JBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <color key="tintColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="t3l-4Y-OSe" firstAttribute="centerX" secondItem="GNW-qF-t9z" secondAttribute="centerX" id="FPe-f9-nX2"/>
+                            <constraint firstItem="t3l-4Y-OSe" firstAttribute="centerY" secondItem="GNW-qF-t9z" secondAttribute="centerY" id="oZe-RF-BFA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="P33-VX-EdB"/>
                 </viewController>
