@@ -88,6 +88,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Back">
                                     <color key="baseBackgroundColor" systemColor="systemBlueColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="fqR-2o-1ld" kind="unwind" unwindAction="backToTopWithSegue:" id="xat-BC-T2X"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lhy-Vi-JBY"/>
@@ -101,6 +104,7 @@
                     <navigationItem key="navigationItem" id="P33-VX-EdB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IJ7-mf-9Fj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="fqR-2o-1ld" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1040" y="462"/>
         </scene>
