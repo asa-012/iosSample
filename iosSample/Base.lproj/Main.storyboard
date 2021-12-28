@@ -24,6 +24,9 @@
                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                     <color key="baseBackgroundColor" systemColor="systemPinkColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="qeh-YA-S97" kind="presentation" id="FPc-sB-giO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY" colorLabel="IBBuiltInLabel-Blue"/>
@@ -44,7 +47,7 @@
             <objects>
                 <viewController id="qeh-YA-S97" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ygO-Ym-oWP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="su7-UP-K6Y"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
