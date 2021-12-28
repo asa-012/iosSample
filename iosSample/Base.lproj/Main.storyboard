@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--title-->
+        <!--title2-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iosSample" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,9 +28,8 @@
                                     <segue destination="qeh-YA-S97" kind="presentation" id="FPc-sB-giO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raS-ZI-QCG">
-                                <rect key="frame" x="141" y="532" width="132" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raS-ZI-QCG">
+                                <rect key="frame" x="141" y="562" width="132" height="28"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="プッシュ遷移します" cornerStyle="large">
                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
@@ -45,10 +44,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="a61-rc-QVw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3aH-PA-McE"/>
+                            <constraint firstItem="raS-ZI-QCG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LE6-1E-tFD"/>
                             <constraint firstItem="a61-rc-QVw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UOB-1V-XUL"/>
+                            <constraint firstItem="raS-ZI-QCG" firstAttribute="top" secondItem="a61-rc-QVw" secondAttribute="bottom" constant="100" id="s7V-JB-IYh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="title" id="CK7-vn-EgX"/>
+                    <navigationItem key="navigationItem" title="title2" id="CK7-vn-EgX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
