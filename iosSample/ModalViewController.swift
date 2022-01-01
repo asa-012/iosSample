@@ -10,9 +10,16 @@ import UIKit
 class ModalViewController: UIViewController {
 
     @IBOutlet weak var changedText: UILabel!
+    var state:Int = 0
     
     @IBAction func changedButton(_ sender: Any) {
-        changedText.text = "changedText"
+        if(state == 0){
+        changedText.text = "NO"
+            state = 1
+        }else{
+            changedText.text = "YES"
+            state = 0
+        }
     }
     
     override func viewDidLoad() {
