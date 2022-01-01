@@ -14,6 +14,7 @@
 		EAB41472277B698400616A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB41471277B698400616A76 /* Assets.xcassets */; };
 		EAB41475277B698400616A76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB41473277B698400616A76 /* LaunchScreen.storyboard */; };
 		EAF39F78277F022D0023FA92 /* MoalVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF39F77277F022D0023FA92 /* MoalVIewController.swift */; };
+		EAF39F7C278087200023FA92 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF39F7B278087200023FA92 /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EAB41474277B698400616A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAB41476277B698400616A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAF39F77277F022D0023FA92 /* MoalVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoalVIewController.swift; sourceTree = "<group>"; };
+		EAF39F7B278087200023FA92 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				EAB41473277B698400616A76 /* LaunchScreen.storyboard */,
 				EAB41476277B698400616A76 /* Info.plist */,
 				EAF39F77277F022D0023FA92 /* MoalVIewController.swift */,
+				EAF39F7B278087200023FA92 /* ModalViewController.swift */,
 			);
 			path = iosSample;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAB4146D277B698200616A76 /* ViewController.swift in Sources */,
+				EAF39F7C278087200023FA92 /* ModalViewController.swift in Sources */,
 				EAB41469277B698200616A76 /* AppDelegate.swift in Sources */,
 				EAB4146B277B698200616A76 /* SceneDelegate.swift in Sources */,
 				EAF39F78277F022D0023FA92 /* MoalVIewController.swift in Sources */,

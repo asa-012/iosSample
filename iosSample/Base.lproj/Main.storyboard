@@ -62,47 +62,42 @@
                     <view key="view" contentMode="scaleToFill" id="ygO-Ym-oWP" customClass="ModalViewController">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSi-Xd-rxs">
-                                <rect key="frame" x="145" y="405.5" width="124" height="31"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
-                                <color key="tintColor" systemColor="systemPinkColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="文字変更ボタン"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="変更前" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm8-aG-c5F">
-                                <rect key="frame" x="181" y="285" width="52" height="20.5"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                <color key="tintColor" systemColor="systemPinkColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="su7-UP-K6Y"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
-                        <constraints>
-                            <constraint firstItem="vSi-Xd-rxs" firstAttribute="centerY" secondItem="ygO-Ym-oWP" secondAttribute="centerY" id="8xi-rY-Vkf"/>
-                            <constraint firstItem="vSi-Xd-rxs" firstAttribute="centerX" secondItem="ygO-Ym-oWP" secondAttribute="centerX" id="QKg-yH-LK8"/>
-                            <constraint firstItem="vSi-Xd-rxs" firstAttribute="top" secondItem="vm8-aG-c5F" secondAttribute="bottom" constant="100" id="TCe-hU-ju7"/>
-                            <constraint firstItem="vm8-aG-c5F" firstAttribute="centerX" secondItem="ygO-Ym-oWP" secondAttribute="centerX" id="eKK-Sm-qHS"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zlT-xH-oIz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1034.7826086956522" y="-283.25892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Modal View Controller-->
         <scene sceneID="dBq-dG-8nJ">
             <objects>
-                <viewController id="m8x-QT-xn3" sceneMemberID="viewController">
+                <viewController id="m8x-QT-xn3" customClass="ModalViewController" customModule="iosSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GNW-qF-t9z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3l-4Y-OSe">
-                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="変更前" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm8-aG-c5F">
+                                <rect key="frame" x="181" y="238" width="52" height="20.5"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSi-Xd-rxs">
+                                <rect key="frame" x="145" y="432.5" width="124" height="31"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="文字変更ボタン"/>
+                                <connections>
+                                    <action selector="changedButton:" destination="m8x-QT-xn3" eventType="touchUpInside" id="4dU-lH-fgF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3l-4Y-OSe">
+                                <rect key="frame" x="157" y="484" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="dSK-iJ-Zo5"/>
                                     <constraint firstAttribute="width" constant="100" id="hBE-9O-dLG"/>
@@ -120,16 +115,23 @@
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <color key="tintColor" systemColor="systemGreenColor"/>
                         <constraints>
+                            <constraint firstItem="vSi-Xd-rxs" firstAttribute="centerY" secondItem="GNW-qF-t9z" secondAttribute="centerY" id="8ko-de-yUC"/>
                             <constraint firstItem="t3l-4Y-OSe" firstAttribute="centerX" secondItem="GNW-qF-t9z" secondAttribute="centerX" id="FPe-f9-nX2"/>
-                            <constraint firstItem="t3l-4Y-OSe" firstAttribute="centerY" secondItem="GNW-qF-t9z" secondAttribute="centerY" id="oZe-RF-BFA"/>
+                            <constraint firstItem="vm8-aG-c5F" firstAttribute="centerY" secondItem="GNW-qF-t9z" secondAttribute="centerY" constant="-200" id="NUp-1s-ltO"/>
+                            <constraint firstItem="vSi-Xd-rxs" firstAttribute="centerX" secondItem="GNW-qF-t9z" secondAttribute="centerX" id="djp-lv-fDE"/>
+                            <constraint firstItem="t3l-4Y-OSe" firstAttribute="centerY" secondItem="GNW-qF-t9z" secondAttribute="centerY" constant="100" id="jgT-mB-MBN"/>
+                            <constraint firstItem="vm8-aG-c5F" firstAttribute="centerX" secondItem="GNW-qF-t9z" secondAttribute="centerX" id="sxr-c9-yzt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="P33-VX-EdB"/>
+                    <connections>
+                        <outlet property="changedText" destination="vm8-aG-c5F" id="gkw-CW-LlK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IJ7-mf-9Fj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="fqR-2o-1ld" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1040" y="462"/>
+            <point key="canvasLocation" x="1039.1304347826087" y="461.38392857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X2G-EW-sny">
